@@ -187,3 +187,19 @@
 // }
 
 // console.log(getLarger([3, 6, 9, 7, 10, 19], 8));
+
+function getSecondLargest(number) {
+  let largestNumber = 0;
+  let secondLargest = 0;
+  for (let i = 0; i < number.length; i++) {
+    if (number[i] > largestNumber) {
+      secondLargest = largestNumber;
+      largestNumber = number[i];
+    } else if (number[i] > secondLargest && number < largestNumber) {
+      secondLargest = number[i];
+    }
+  }
+  return secondLargest;
+}
+const array = [9, 6, 8, 10, 1, 2];
+console.log(getSecondLargest(array));
