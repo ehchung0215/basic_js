@@ -1,18 +1,18 @@
-// // const prompt = require("prompt-sync")({ sigint: true });
+// const prompt = require("prompt-sync")({ sigint: true });
 
-// // console.log("Hello let's print your name");
+// console.log("Hello let's print your name");
 
-// // const name = prompt("what is your name? ");
+// const name = prompt("what is your name? ");
 
-// // const age = prompt("how old are you? ");
+// const age = prompt("how old are you? ");
 
-// // const job = prompt("what do you do for living? ");
+// const job = prompt("what do you do for living? ");
 
-// // console.log(
-// //   "My name is " + name + ". I am " + age + " years old" + " my job is " + job
-// // );
+// console.log(
+//   "My name is " + name + ". I am " + age + " years old" + " my job is " + job
+// );
 
-// // const favoriteFoods = ["pizza", "burgers", "steak", "sushi"];
+// const favoriteFoods = ["pizza", "burgers", "steak", "sushi"];
 
 // const baum = {
 //   courses: ["QA", "web-dev", "kids-coding"],
@@ -1204,11 +1204,11 @@
 // function moveZeros(array) {
 //   let zeros = [];
 //   let nonzeros = [];
-//   // create a for loop if the number is zero, push to the zeros array, if the number is not 0, push to the nonzeros
-//   // create another for loop
-//   // zeros = [0, 0, 0, 0]
-//   // nonzeros = [1, 2, 3, 4, 5, 6, 7, 0, 0, 0, 0]
-//   // nonzeros.push(number)
+// create a for loop if the number is zero, push to the zeros array, if the number is not 0, push to the nonzeros
+// create another for loop
+// zeros = [0, 0, 0, 0]
+// nonzeros = [1, 2, 3, 4, 5, 6, 7, 0, 0, 0, 0]
+// nonzeros.push(number)
 
 //   for (let i = 0; i < array.length; i++) {
 //     if (array[i] === 0) {
@@ -1313,75 +1313,3 @@
 //     }
 //   }
 // };
-// Given an integer array nums, return an array output where output[i] is the product of all the elements of nums except nums[i].
-
-// Example 1:
-
-// Input: nums = [1,2,4,6
-// Output: [48,24,12,8]
-
-// Example 2:
-
-// Input: nums = [-1,0,1,2,3]
-
-// Output: [0,-6,0,0,0]
-
-// function getProduct(nums) {
-//   let result = [];
-//   for (let i = 0; i < nums.length; i++) {
-//     let product = 1;
-//     for (let j = 0; j < nums.length; j++) {
-//       if (i !== j) {
-//         product = product * nums[j];
-//       }
-//     }
-//     result.push(product);
-//   }
-//   return result;
-// }
-
-// console.log(getProduct([1, 2, 4, 6, 8, 10]));
-
-// Write a function average(arr) that calculates the average of numbers in an array.
-// average([10, 20, 30]); // Output: 20
-
-// const array = [10, 20, 30, 40, 50];
-
-// function getAverage(numbers) {
-//   let sum = 0;
-//   for (let i = 0; i < numbers.length; i++) {
-//     sum = sum + numbers[i];
-//   }
-//   return sum / numbers.length;
-// }
-
-// const result = getAverage(array);
-// console.log(result);
-
-// getLargest([3, 6, 9, 7, 10, 19]);
-// Output: [19];
-
-// function getLargest(numbers) {
-//   let largestNumber = numbers[0];
-//   for (let i = 1; i < numbers.length; i++) {
-//     if (numbers[i] > largestNumber) {
-//       largestNumber = numbers[i];
-//     }
-//   }
-//   return largestNumber;
-// }
-
-// const result = getLargest([3, 9, 10, 5]);
-// console.log(result);
-
-function getLarger(number, target) {
-  let largerNumber = [];
-  for (let i = 0; i < number.length; i++) {
-    if (number[i] > target) {
-      largerNumber.push(number[i]);
-    }
-  }
-  return largerNumber;
-}
-
-console.log(getLarger([3, 6, 9, 7, 10, 19], 8));

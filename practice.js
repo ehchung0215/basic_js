@@ -1,31 +1,31 @@
-// // const firstName = "Esther";
-// // const lastName = "Chung";
-// // const birthday ="February, 15";
-// // let isMarried;
-// // const address = null;
+// const firstName = "Esther";
+// const lastName = "Chung";
+// const birthday ="February, 15";
+// let isMarried;
+// const address = null;
 
-// // const classmates = ["Esther", "Josh", "DJ", "Inchan", "DC", "Phil"];
-// // console.log("OG Members!", classmates.length);
-// // classmates.push("Jenny");
-// // const classdays =["Tuesday", "Thursday", "Saturday"];
-// // const classmatesAndClassdays = [...classmates, ...classdays];
+// const classmates = ["Esther", "Josh", "DJ", "Inchan", "DC", "Phil"];
+// console.log("OG Members!", classmates.length);
+// classmates.push("Jenny");
+// const classdays =["Tuesday", "Thursday", "Saturday"];
+// const classmatesAndClassdays = [...classmates, ...classdays];
 
-// // const foods = ["chicken", "beef", "potatoes", "kimchi", "radish"];
-// // const foodAndPeople = [...foods, ...classmates];
+// const foods = ["chicken", "beef", "potatoes", "kimchi", "radish"];
+// const foodAndPeople = [...foods, ...classmates];
 
-// // console.log("New Members Added!", classmates.length);
-// // console.log("Location of Josh", classmates.indexOf("Josh"));
+// console.log("New Members Added!", classmates.length);
+// console.log("Location of Josh", classmates.indexOf("Josh"));
 
-// // console.log("Remove an item from the end of the list", classmates.pop());
-// // console.log("classmates", classmates);
+// console.log("Remove an item from the end of the list", classmates.pop());
+// console.log("classmates", classmates);
 
-// // const team = ["Josh", "Esther", "DJ", "Phil", "Inchan", "DC"];
+// const team = ["Josh", "Esther", "DJ", "Phil", "Inchan", "DC"];
 
-// // console.log(team[1], "and", team[2], "are friends")
-// // const BTS = [7, "Jin", "V", "JK", "Jimin" ];
-// // const BTSleader = "RM";
+// console.log(team[1], "and", team[2], "are friends")
+// const BTS = [7, "Jin", "V", "JK", "Jimin" ];
+// const BTSleader = "RM";
 
-// // console.log(BTS[0], "," BTS[2], "and" BTS[3], "are JiJinJung");
+// console.log(BTS[0], "," BTS[2], "and" BTS[3], "are JiJinJung");
 
 // const parents = { "Phil": ["Journey", "Audrey"],
 // "Esther": ["Doyle"],
@@ -34,9 +34,9 @@
 // "Inchan": ["Moa"],
 // "Josh": null}
 
-// // const names = ["Phil", "DC"];
-// // parents.Phil.pop();
-// // console.log(parents.Phil[0]);
+// const names = ["Phil", "DC"];
+// parents.Phil.pop();
+// console.log(parents.Phil[0]);
 // "Journey, Ashton, and Ailee are same grade";
 // console.log(parents.Phil[0], ",", parents.DC[0], ", and", parents.DJ[0], "are in the same grade level.");
 
@@ -114,3 +114,76 @@
 // } else {
 //   console.log("I can't drive!");
 // }
+
+// Given an integer array nums, return an array output where output[i] is the product of all the elements of nums except nums[i].
+
+// Example 1:
+
+// Input: nums = [1,2,4,6
+// Output: [48,24,12,8]
+
+// Example 2:
+
+// Input: nums = [-1,0,1,2,3]
+
+// Output: [0,-6,0,0,0]
+
+// function getProduct(nums) {
+//   let result = [];
+//   for (let i = 0; i < nums.length; i++) {
+//     let product = 1;
+//     for (let j = 0; j < nums.length; j++) {
+//       if (i !== j) {
+//         product = product * nums[j];
+//       }
+//     }
+//     result.push(product);
+//   }
+//   return result;
+// }
+
+// console.log(getProduct([1, 2, 4, 6, 8, 10]));
+
+// Write a function average(arr) that calculates the average of numbers in an array.
+// average([10, 20, 30]); // Output: 20
+
+// const array = [10, 20, 30, 40, 50];
+
+// function getAverage(numbers) {
+//   let sum = 0;
+//   for (let i = 0; i < numbers.length; i++) {
+//     sum = sum + numbers[i];
+//   }
+//   return sum / numbers.length;
+// }
+
+// const result = getAverage(array);
+// console.log(result);
+
+// getLargest([3, 6, 9, 7, 10, 19]);
+// Output: [19];
+
+// function getLargest(numbers) {
+//   let largestNumber = numbers[0];
+//   for (let i = 1; i < numbers.length; i++) {
+//     if (numbers[i] > largestNumber) {
+//       largestNumber = numbers[i];
+//     }
+//   }
+//   return largestNumber;
+// }
+
+// const result = getLargest([3, 9, 10, 5]);
+// console.log(result);
+
+// function getLarger(number, target) {
+//   let largerNumber = [];
+//   for (let i = 0; i < number.length; i++) {
+//     if (number[i] > target) {
+//       largerNumber.push(number[i]);
+//     }
+//   }
+//   return largerNumber;
+// }
+
+// console.log(getLarger([3, 6, 9, 7, 10, 19], 8));
