@@ -1,0 +1,76 @@
+<html>
+  <head>
+    <style>
+      body {
+        background-color: white;
+        color: black;
+      }
+
+      #element-1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+      }
+
+      .listing {
+        display: flex;
+        width: 80vw;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+        height: 30px;
+        background-color: blue;
+        color: yellow;
+        margin: 20px 50px;
+        padding: 9px;
+        cursor: pointer;
+      }
+
+      .listing:hover {
+        background-color: yellow;
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="element-1">
+      <div id="listing-one" class="listing-one listing">listing one</div>
+      <div id="listing-two" class="listing-two listing">listing two</div>
+      <div id="default" class="listing-two listing">default</div>
+    </div>
+    <script type="text/javascript">
+      const listingOne = document.getElementById("listing-one");
+      const listingTwo = document.getElementById("listing-two");
+      const listingDefault = document.getElementById("default");
+      function clickListingOne() {
+        listingOne.innerText = "listing one!";
+        listingTwo.innerText = "listing two";
+        console.log("listing one!");
+      }
+
+      function clickListingTwo() {
+        listingTwo.innerText = "listing two!";
+        listingOne.innerText = "listing one";
+        console.log("Clicked Listing Two!");
+      }
+
+      function clickDefault() {
+        listingTwo.innerText = "listing two";
+        listingOne.innerText = "listing one";
+        listingDefault.innerText = "default";
+      }
+
+    function click(listing) {
+        // if 'listing one' then do what u did for clickListingOne
+        // else if 'listing two' then do what u did for clickLIstingTwo
+        // else then do default
+    }
+
+      listingOne.addEventListener("click", () => click('listing one'));
+      listingTwo.addEventListener("click", () => click('listing two'));
+      listingDefault.addEventListener("click", () => click('default'));
+    </script>
+  </body>
+</html>

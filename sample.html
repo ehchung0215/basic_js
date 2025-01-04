@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags for character encoding and responsive design -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title of the page -->
+    <title>Unique IDs & Classes with Basic CSS</title>
+
+    <!-- Internal CSS (can be placed in an external file as well) -->
+    <style>
+      /* Basic CSS Styles */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        background-color: #d086b6;
+        color: white;
+        text-align: center;
+        padding: 20px;
+      }
+
+      nav {
+        background-color: #9ca7ef;
+        padding: 10px;
+      }
+
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+      }
+
+      nav ul li {
+        display: inline;
+        margin: 0 15px;
+      }
+
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+      }
+
+      main {
+        padding: 20px;
+      }
+
+      section {
+        background-color: #fff;
+        margin-bottom: 20px;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      footer {
+        background-color: #f3a3a3;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+      }
+
+      /* Specific IDs */
+      #home {
+        background-color: #ceeace;
+      }
+
+      #about {
+        background-color: #ace0f5;
+      }
+
+      #contact {
+        background-color: #fcfbc3;
+      }
+
+      /* Classes */
+      .section-title {
+        font-size: 24px;
+        color: #333;
+        margin-bottom: 10px;
+      }
+
+      .section-description {
+        font-size: 16px;
+        color: #555;
+      }
+
+      .highlight {
+        color: #ff6347;
+        font-weight: bold;
+      }
+
+      /* Image specific styling */
+      #image-section img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Header section -->
+    <header id="header">
+      <h1 id="main-title">Welcome to My Website</h1>
+      <p id="intro-text">
+        This is a basic HTML template with unique IDs, classes, and basic CSS
+        styling.
+      </p>
+    </header>
+
+    <!-- Navigation section -->
+    <nav id="navigation">
+      <ul>
+        <li><a href="#home" id="home-link" class="nav-link">Home</a></li>
+        <li><a href="#about" id="about-link" class="nav-link">About</a></li>
+        <li>
+          <a href="#contact" id="contact-link" class="nav-link">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Main content section -->
+    <main id="main-content">
+      <section id="home" class="content-section">
+        <h2 id="home-title" class="section-title">Home Section</h2>
+        <p id="home-description" class="section-description">
+          This is the home section of the webpage. It's styled with unique IDs
+          and basic CSS.
+        </p>
+      </section>
+
+      <section id="about" class="content-section">
+        <h2 id="about-title" class="section-title">About Section</h2>
+        <p id="about-description" class="section-description">
+          This section is about the website or the creator. It's styled
+          differently from other sections.
+        </p>
+      </section>
+
+      <section id="contact" class="content-section">
+        <h2 id="contact-title" class="section-title">Contact Section</h2>
+        <p id="contact-description" class="section-description">
+          You can email me at
+          <a
+            href="mailto:example@example.com"
+            id="contact-email"
+            class="highlight"
+            >example@example.com</a
+          >.
+        </p>
+      </section>
+
+      <!-- Image section -->
+      <section id="image-section" class="content-section">
+        <h2 id="image-title" class="section-title">Image Section</h2>
+        <img
+          id="example-image"
+          class="highlight"
+          src="https://via.placeholder.com/600x300"
+          alt="Placeholder Image"
+        />
+      </section>
+    </main>
+
+    <!-- Footer section -->
+    <footer id="footer">
+      <p id="footer-text">&copy; 2024 My Website. All rights reserved.</p>
+    </footer>
+    <script>
+      const home = document.getElementById("home-link");
+      console.log("this is home element", home);
+
+      home.innerText = "Esther";
+      const image = document.getElementById("image-section");
+      console.log("image-section", image);
+
+      const email = document.getElementById("contact-email");
+      console.log("contact-email", email);
+    </script>
+  </body>
+</html>
