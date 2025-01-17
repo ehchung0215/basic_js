@@ -188,18 +188,38 @@
 
 // console.log(getLarger([3, 6, 9, 7, 10, 19], 8));
 
-function getSecondLargest(number) {
-  let largestNumber = 0;
-  let secondLargest = 0;
-  for (let i = 0; i < number.length; i++) {
-    if (number[i] > largestNumber) {
-      secondLargest = largestNumber;
-      largestNumber = number[i];
-    } else if (number[i] > secondLargest && number < largestNumber) {
-      secondLargest = number[i];
-    }
-  }
-  return secondLargest;
-}
-const array = [9, 6, 8, 10, 1, 2];
-console.log(getSecondLargest(array));
+// function getSecondLargest(number) {
+//   let largestNumber = 0;
+//   let secondLargest = 0;
+//   for (let i = 0; i < number.length; i++) {
+//     if (number[i] > largestNumber) {
+//       secondLargest = largestNumber;
+//       largestNumber = number[i];
+//     } else if (number[i] > secondLargest && number < largestNumber) {
+//       secondLargest = number[i];
+//     }
+//   }
+//   return secondLargest;
+// }
+// const array = [9, 6, 8, 10, 1, 2];
+// console.log(getSecondLargest(array));
+
+// //Write a function that filters out even numbers in an array (keep odd numbers). Look up array.filter method.
+// const evenNumbers = [0, 1, 2, 3, 4, 4, 5, 6, 7, 8, 8, 8, 9, 10];
+// const result = evenNumbers.filter => num%2 === 1
+//   console.log(result);
+
+// const odd = (arr) => {
+//   return arr.filter((num) =>
+//   num%2 === 1)
+// }
+
+// return only words that are longer than the word length
+// const longWordsOnly = (wordsArray, length)
+// longWordsOnly(["Hi", "World"], 4)
+// returns ["World"]
+
+const longWordsOnly = (wordsArray, length) => {
+  return wordsArray.filter((word) => word.length > length);
+};
+console.log(longWordsOnly(["Hi", "Hello"], 4));
